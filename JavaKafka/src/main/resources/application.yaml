@@ -1,0 +1,16 @@
+server:
+  port: 4000
+
+spring:
+  web:
+    error:
+      include-message: always
+      include-binding-errors: always
+      include-stacktrace: never
+      include-exception: false
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: demo
+      auto-offset-reset: earliest
